@@ -1,14 +1,23 @@
-:root{
-  --primary-color: rgb(203, 150, 177);
-  
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #484848;
+  --btn-color: #43b3e0;
 }
 
-
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+button {
+  margin: 0;
 }

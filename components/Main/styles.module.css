@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  text-align: justify;
+}
+
+.imgWrapper {
+  height: 650px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.descr {
+  padding: 1.5rem;
+  width: 50%;
+}
