@@ -8,7 +8,7 @@ type QuestionProps = {
 
 const Question = ({ questionText, date }: QuestionProps) => {
   const pleaseLogin = () => {
-     alert("If you want to see more information, please login ir sign up")
+     alert("If you want to see more information, please login or sign up")
   }
   return (
     <div className={styles.main} onClick={() => pleaseLogin()}>

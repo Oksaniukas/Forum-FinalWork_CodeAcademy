@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.main input {
+  padding: 0.65rem;
+}
+
+.main button {
+  padding: 0.65rem;
+}
+
+.error{
+  color: rgb(129, 29, 29);
+  margin: 0;
+}

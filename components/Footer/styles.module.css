@@ -3,5 +3,8 @@
   padding: 1rem;
   text-align: center;
   color: #ffffff;
+  position: absolute;
+bottom: 0;
+width: 100%;
 }
 

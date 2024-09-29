@@ -17,7 +17,7 @@ const Main = () => {
           <li>Share Your Knowledge: Contribute by answering questions, sharing tips, or posting useful resources.</li>
           <li>Join the Discussion: Browse topics, participate in ongoing conversations, and connect with others who share your interests.</li>
         </ul>
-        <h4> Please, Sign up to start asking questions!</h4>
+        <h3> Please, Sign up/Login to start asking questions!</h3>
       </div>
     </div>
   );
