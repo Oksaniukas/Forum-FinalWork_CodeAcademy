@@ -44,7 +44,12 @@
   gap: 2rem;
 }
 
-.nav h4:hover {
+.navLink{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.navLink:hover {
   cursor: pointer;
   text-decoration: underline;
 }

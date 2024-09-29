@@ -19,3 +19,9 @@
   padding: 1.5rem;
   width: 50%;
 }
+
+.descr p,
+.descr h4,
+.descr h3 {
+  margin-bottom: 1rem;
+}
