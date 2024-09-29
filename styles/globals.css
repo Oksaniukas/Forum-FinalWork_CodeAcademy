@@ -1,0 +1,14 @@
+:root{
+  --primary-color: rgb(203, 150, 177);
+  
+}
+
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
