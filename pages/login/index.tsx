@@ -8,7 +8,7 @@ const LoginPage = () => {
   return (
     <div className={styles.main}>
      <Header />
-     <h1 style={{textAlign: "center", marginTop: "5rem"}} >Login to INPP forum</h1>
+     <h1 style={{textAlign: "center", marginTop: "4rem"}} >Login to INPP forum</h1>
      <LoginForm />
      <Footer />
     </div>

@@ -8,7 +8,7 @@ const SignupPage = () => {
   return (
     <div className={styles.main}>
      <Header />
-     <h1 style={{textAlign: "center", marginTop: "5rem"}} >Sign Up to INPP forum</h1>
+     <h1 style={{textAlign: "center", marginTop: "4rem"}} >Sign Up to INPP forum</h1>
      <SignUpForm />
      <Footer />
     </div>

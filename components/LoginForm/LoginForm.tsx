@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import axios from "axios";
 import cookie from "js-cookie";
 import styles from "./styles.module.css";
 import { useRouter } from "next/router";
@@ -18,22 +17,12 @@ const LoginForm = () => {
     try {
       setButtonLoading(true);
 
-      // const body = {
-      //   email: email,
-      //   password: password,
-      // };
-
       const response = await login({ email, password });
-
-      // const response = await axios.post(
-      //   `${process.env.SERVER_URL}/login`,
-      //   body
-      // );
 
       if (response.status === 200) {
         cookie.set(process.env.JWT_KEY as string, response.data.token);
         cookie.set("user_id", response.data.userId);
-        router.push("/");
+        router.push("/questions");
       }
 
       console.log(response);

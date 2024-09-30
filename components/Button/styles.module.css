@@ -1,13 +1,30 @@
-.main {
+/* .main {
   border: none;
   padding: 1rem;
   background-color: burlywood;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-}
+} */
 
 .danger {
   background-color: rgb(210, 40, 21);
   color: white;
+}
+.main {
+  height: 100%;
+  width: 7rem;
+  font-size: 1rem;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  background-color: var(--btn-color);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.main:hover {
+  background-color: #165171;
 }
