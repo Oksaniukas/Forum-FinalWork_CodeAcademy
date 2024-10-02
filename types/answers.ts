@@ -1,4 +1,4 @@
-export type Answer = {
+export type AnswerType = {
    id: string;
    answerText: string;
    date: Date;

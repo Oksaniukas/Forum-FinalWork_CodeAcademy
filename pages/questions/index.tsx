@@ -5,6 +5,7 @@ import QuestionsWrapper from "@/components/QuestionsWrapper/QuestionsWrapper";
 import PageTemplate from "@/components/PageTemplate/PageTemplate";
 
 const Questions = () => {
+
   const [questions, setQuestions] = useState<QuestType[]>([]);
 
   const fetchQuestions = async () => {
@@ -19,7 +20,7 @@ const Questions = () => {
 
   useEffect(() => {
     fetchQuestions();
-  }, []);
+  }, []); // Fetch questions only once
 
   return (
     <PageTemplate>

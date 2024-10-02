@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 const SignupPage = () => {
   return (
     <div className={styles.main}>
-     <Header />
+     <Header isUserLoggedIn={false} />
      <h1 style={{textAlign: "center", marginTop: "4rem"}} >Sign Up to INPP forum</h1>
      <SignUpForm />
      <Footer />
