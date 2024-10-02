@@ -1,5 +1,4 @@
 import axios from "axios";
-import cookie from "js-cookie";
 
 type SignUpProps = {
   name: string;
@@ -18,14 +17,3 @@ export const signup = async ({ name, email, password }: SignUpProps) => {
   return response;
 };
 
-// export const validateUser = async () => {
-//   const jwt = cookie.get("forum_app_jwt");
-
-//   const headers = {
-//     authorization: jwt,
-//   };
-//   const response = await axios.get(`${process.env.SERVER_URL}/login/validate`, {
-//     headers,
-//   });
-//   return response;
-// };

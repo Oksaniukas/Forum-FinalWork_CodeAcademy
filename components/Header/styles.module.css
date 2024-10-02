@@ -33,7 +33,7 @@
 
 .navWrapper {
   width: 100%;
-  display: flex;
+  display: flex;flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--secondary-color);
@@ -41,6 +41,8 @@
 
 .nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -59,4 +61,8 @@
   align-items: center;
   gap: 2rem;
   height: 50%;
+}
+
+.navWrapper button{
+  width: 150px;
 }
