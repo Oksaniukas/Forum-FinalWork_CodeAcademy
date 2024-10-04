@@ -11,7 +11,7 @@ const PageTemplate = ({ children }: PageTemplateProps) => {
   
   return (
     <div className={styles.wrapper}>
-      <Header  />
+      <Header isUserLoggedIn={ false } />
       <div className={styles.main}>{children}</div>
       <Footer  />
     </div>

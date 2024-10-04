@@ -87,7 +87,10 @@ const Header = ({ isUserLoggedIn }: HeaderProps) => {
               Home
             </Link>
             <Link href={`/questions`} className={styles.navLink}>
-              See All Questions
+               All Questions
+            </Link>
+            <Link href={`/userquestions`} className={styles.navLink}>
+              My Questions
             </Link>
             <Button
                 onClick={askQuestion}

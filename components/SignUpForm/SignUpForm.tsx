@@ -15,6 +15,7 @@ const SignUpForm = () => {
   const [isButtonLoading, setButtonLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
+
   const signUpUser = async () => {
     if (!name || !email || !password) {
       setErrorMessage("Please fill in all the fields.");
@@ -36,7 +37,7 @@ const SignUpForm = () => {
       if (response.status === 200) {
         cookie.set(process.env.JWT_KEY as string, response.data.token);
         cookie.set("user_id", response.data.userId);
-        router.push("/login");
+        router.push("/questions");
       }
       console.log(response);
 
@@ -95,6 +96,7 @@ const SignUpForm = () => {
         onClick={signUpUser}
         title="Sign Up"
         isLoading={isButtonLoading}
+        
       />
     </div>
   );

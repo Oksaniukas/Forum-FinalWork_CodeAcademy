@@ -17,6 +17,7 @@ const QuestionsWrapper = ({ questions }: QuestionsWrapperProps) => {
                 key={question.id}
                 questionText={question.questionText}
                 date={new Date(question.date)}
+                userId={question.userId}
               />
             );
           })

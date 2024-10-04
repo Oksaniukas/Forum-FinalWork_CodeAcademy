@@ -8,11 +8,9 @@ type AnswerProps = {
 };
 
 const Answer = ({ answerText, date }: AnswerProps) => {
-  const pleaseLogin = () => {
-     alert("If you want to see more information, please login or sign up")
-  }
+  
   return (
-    <div className={styles.main} onClick={() => pleaseLogin()}>
+    <div className={styles.main} >
       <h3>{answerText}</h3>
       <p>{date.toLocaleDateString()}</p>
     </div>

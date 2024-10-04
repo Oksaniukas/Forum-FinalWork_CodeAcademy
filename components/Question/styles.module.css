@@ -1,15 +1,21 @@
-.main{
+.main {
   padding: 1rem;
-  border: 3px solid rgb(253, 252, 252);
+  border: 1px solid rgb(202, 199, 199);
   border-radius: 8px;
   font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f8f8f8;
 }
 
-.main h3{
+.main h4 {
   margin-bottom: 0.5rem;
+  word-wrap: break-word;
 }
 
 .main p {
   font-size: 0.8rem;
 }
 
+.answerCount {
+  font-weight: 800;
+}

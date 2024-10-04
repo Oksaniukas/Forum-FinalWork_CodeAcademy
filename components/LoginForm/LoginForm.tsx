@@ -17,7 +17,7 @@ const LoginForm = () => {
     try {
       setButtonLoading(true);
 
-      const response = await login({ email, password });
+      const response = await login({ email, password, });
 
       if (response.status === 200) {
         cookie.set(process.env.JWT_KEY as string, response.data.token);

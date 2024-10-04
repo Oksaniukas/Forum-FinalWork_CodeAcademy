@@ -41,10 +41,9 @@ const PostQuestionForm = () => {
 
   return (
     <div className={styles.main}>
-      <input
+      <textarea
         value={questionText}
         placeholder="Question Text"
-        type="text"
         onChange={(e) => {
           setquestionText(e.target.value);
         }}
