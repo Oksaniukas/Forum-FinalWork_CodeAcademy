@@ -1,0 +1,74 @@
+.main {
+  padding: 1rem;
+  border: 1px solid rgb(202, 199, 199);
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.questWrapper {
+  border-bottom: 1px solid rgb(202, 199, 199);
+  padding: 1rem;
+}
+.questInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.main h4 {
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+}
+
+.main p {
+  font-size: 0.8rem;
+}
+
+.answerCount {
+  font-weight: 800;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.answer h4 {
+  margin-bottom: 0;
+}
+
+.answerWrapper {
+  padding: 2rem;
+  background-color: #ebebeb;
+}
+
+.answerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.answerDescr {
+  border: 1px solid rgb(219, 216, 216);
+  /* border-radius: 8px; */
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+.addAnswer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main textarea {
+  min-height: 40px;
+  padding: 0.5rem;
+}

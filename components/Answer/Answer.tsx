@@ -11,6 +11,7 @@ const Answer = ({ answerText, date }: AnswerProps) => {
   
   return (
     <div className={styles.main} >
+      
       <h3>{answerText}</h3>
       <p>{date.toLocaleDateString()}</p>
     </div>

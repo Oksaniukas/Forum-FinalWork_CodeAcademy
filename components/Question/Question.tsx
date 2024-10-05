@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
+
 import axios from "axios";
 import styles from "./styles.module.css";
 
@@ -9,30 +11,31 @@ type QuestionProps = {
   userId: string;
 };
 
-const Question = ({ id, questionText, date }: QuestionProps) => {
+const Question = ({ id, questionText, date, }: QuestionProps) => {
   const [answerCount, setAnswerCount] = useState<number>(0);
   const fetchAnswerCount = async () => {
+    if (!id) return; // Ensure id is defined before making the request
     try {
       const response = await axios.get(
         `${process.env.SERVER_URL}/question/${id}/answers`
-      ); // Assuming this endpoint returns the answers
-      setAnswerCount(response.data.length); // Update the state with the number of answers
+      );
+      setAnswerCount(response.data.length);
     } catch (error) {
-      console.error("Error fetching answers:", error);
+      console.error("Error fetching answers:");
     }
   };
 
-  // useEffect to fetch answers when component mounts
   useEffect(() => {
-    fetchAnswerCount();
-  }, [id]); // Fetch answers whenever questionId changes
-
+    if (id) {
+      fetchAnswerCount();
+    }
+  }, [id]); // Ensure the useEffect runs only when id is available
   return (
-    <div className={styles.main}>
+    <Link href={`/question/${id}`} className={styles.main}>
       <h4>{questionText}</h4>
       <p>{date.toLocaleDateString()}</p>
-      <p className={styles.answerCount}>Answers (count): {answerCount}</p>
-    </div>
+      <p className={styles.answerCount}>Answers : {answerCount}</p>
+    </Link>
   );
 };
 
