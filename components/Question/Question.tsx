@@ -21,7 +21,7 @@ const Question = ({ id, questionText, date, }: QuestionProps) => {
       );
       setAnswerCount(response.data.length);
     } catch (error) {
-      console.error("Error fetching answers:");
+      console.error("Error fetching answers:",error);
     }
   };
 

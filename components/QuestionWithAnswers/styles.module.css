@@ -72,3 +72,18 @@
   min-height: 40px;
   padding: 0.5rem;
 }
+
+.like{ height: 1.5rem;}
+
+.iconWrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem ;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+  gap:0.3rem;
+  font-weight: 600;
+}
