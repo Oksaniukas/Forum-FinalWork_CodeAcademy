@@ -27,3 +27,11 @@
 .main p {
   font-size:0.8rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 70%;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}

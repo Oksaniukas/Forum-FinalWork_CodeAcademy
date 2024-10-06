@@ -4,7 +4,13 @@
   text-align: center;
   color: #ffffff;
   position: absolute;
-bottom: 0;
-width: 100%;
+  bottom: 0;
+  width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .main {
+    position:unset;
+    font-size: 0.85rem;
+  }
+}

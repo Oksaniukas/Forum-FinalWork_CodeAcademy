@@ -41,9 +41,9 @@ const Header = ({ isUserLoggedIn }: HeaderProps) => {
     router.push("/"); // Redirect to the home page
   };
 
-  const askQuestion = ( )=> {
-    router.push("/postquestion")
-  }
+  const askQuestion = () => {
+    router.push("/postquestion");
+  };
 
   return (
     <div className={styles.mainWrapper}>
@@ -87,16 +87,18 @@ const Header = ({ isUserLoggedIn }: HeaderProps) => {
               Home
             </Link>
             <Link href={`/questions`} className={styles.navLink}>
-               All Questions
+              All Questions
             </Link>
             <Link href={`/userquestions`} className={styles.navLink}>
               My Questions
             </Link>
+          </div>
+          <div className={styles.btn}>
             <Button
-                onClick={askQuestion}
-                title="Ask Question"
-                isLoading={isButtonLoading}
-              />
+              onClick={askQuestion}
+              title="Ask Question"
+              isLoading={isButtonLoading}
+            />
           </div>
         </div>
       )}
